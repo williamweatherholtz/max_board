@@ -1,0 +1,39 @@
+schematic capture
+
+power
+	wired?
+	battery
+	energy harvesting?
+
+make a symbol
+	pin types
+		controlling
+			output, power output
+		vs using
+			input, power input
+		vs both
+			tristate, bidirectional
+		vs none
+			if redundant: passive + non-visible
+			if not connected: not connected
+
+connectors
+	sensors?
+	controls
+	communications (USB, I2C, SPI, etc.)
+
+HMI
+	buttons
+	LEDs
+	displays
+
+uC
+	main brain
+		crystals, osc
+	programmer
+
+mounting
+	enclosure?
+
+layout
+
