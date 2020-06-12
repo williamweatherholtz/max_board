@@ -130,8 +130,6 @@ Text Notes 7050 950  0    50   ~ 0
 https://www.amazon.com/ALITOVE-Upgraded-Individually-Addressable-Waterproof/dp/B01IR7SEQ4
 Text Label 9500 1450 0    50   ~ 0
 RED
-Text Label 9500 1550 0    50   ~ 0
-GREEN
 Text Label 9500 1750 0    50   ~ 0
 BLACK
 Wire Wire Line
@@ -735,8 +733,6 @@ Wire Wire Line
 	9250 2500 9250 2400
 Text Label 9500 2500 0    50   ~ 0
 RED
-Text Label 9500 2600 0    50   ~ 0
-GREEN
 Text Label 9500 2800 0    50   ~ 0
 BLACK
 Wire Wire Line
@@ -784,8 +780,6 @@ Wire Wire Line
 	9250 3500 9250 3400
 Text Label 9500 3500 0    50   ~ 0
 RED
-Text Label 9500 3600 0    50   ~ 0
-GREEN
 Text Label 9500 3800 0    50   ~ 0
 BLACK
 Wire Wire Line
@@ -810,4 +804,85 @@ Wire Wire Line
 	9000 2700 9950 2700
 Wire Wire Line
 	9050 3700 9950 3700
+$Comp
+L power:+5V #PWR0127
+U 1 1 5EE24CF4
+P 1050 6000
+F 0 "#PWR0127" H 1050 5850 50  0001 C CNN
+F 1 "+5V" H 1065 6173 50  0000 C CNN
+F 2 "" H 1050 6000 50  0001 C CNN
+F 3 "" H 1050 6000 50  0001 C CNN
+	1    1050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6000 1050 6200
+Wire Wire Line
+	5100 2550 5000 2550
+Wire Wire Line
+	5000 2550 5000 2350
+Wire Wire Line
+	5000 2350 5700 2350
+Connection ~ 5700 2350
+$Comp
+L Device:R R5
+U 1 1 5EE40660
+P 7750 2700
+F 0 "R5" H 7820 2746 50  0000 L CNN
+F 1 "10k" H 7820 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 2700 50  0001 C CNN
+F 3 "~" H 7750 2700 50  0001 C CNN
+	1    7750 2700
+	1    0    0    -1  
+$EndComp
+Text Label 6550 2550 0    50   ~ 0
+BOOT0
+Wire Wire Line
+	6300 2550 6550 2550
+Text Label 7750 2550 0    50   ~ 0
+BOOT0
+$Comp
+L power:GND #PWR0128
+U 1 1 5EE42AA0
+P 7750 2850
+F 0 "#PWR0128" H 7750 2600 50  0001 C CNN
+F 1 "GND" H 7755 2677 50  0000 C CNN
+F 2 "" H 7750 2850 50  0001 C CNN
+F 3 "" H 7750 2850 50  0001 C CNN
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EE4CEDF
+P 6200 6900
+F 0 "H1" H 6300 6946 50  0000 L CNN
+F 1 "MountingHole" H 6300 6855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 6200 6900 50  0001 C CNN
+F 3 "~" H 6200 6900 50  0001 C CNN
+	1    6200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EE502B7
+P 6200 7100
+F 0 "H2" H 6300 7146 50  0000 L CNN
+F 1 "MountingHole" H 6300 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 6200 7100 50  0001 C CNN
+F 3 "~" H 6200 7100 50  0001 C CNN
+	1    6200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EE524E9
+P 6200 7300
+F 0 "H3" H 6300 7346 50  0000 L CNN
+F 1 "MountingHole" H 6300 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 6200 7300 50  0001 C CNN
+F 3 "~" H 6200 7300 50  0001 C CNN
+	1    6200 7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
